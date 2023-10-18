@@ -95,9 +95,3 @@ body{
         font-size: 16px;
     }
 } 
-@media screen and (min-width: 1201px){
-    .investors-card{
-        /* grid-template-columns: repeat(5,1fr); */
-        height: 1300px;
-    }
-}
