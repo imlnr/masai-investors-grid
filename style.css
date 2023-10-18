@@ -13,15 +13,16 @@ body{
     height: 2800px;
     /* border: 1px solid; */
     grid-template-columns: repeat(4,1fr);
-    gap: 2%;
+    gap: 3%;
 }
 .card{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .card>.inv-img{
     /* height: 400px; */
     width: 100%;
+    /* height: 250px; */
 }
 .card>.name{
     font-weight: bold;
@@ -40,4 +41,63 @@ body{
 }
 .card > .position{
     margin-bottom: 0%;
+}
+@media all and (max-width:319px){
+    .investors-card{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media all and (min-width:320px) and (max-width:480px){
+    .investors-card{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .card .name{
+        font-size: 14px;
+    }
+    .card .position{
+        font-size: 12px;
+    }
+}
+@media all and (min-width:481px) and (max-width:768px){
+    .investors-card{
+        grid-template-columns: repeat(3,1fr);
+        height: 2000px;
+    }
+    .card .name{
+        font-size: 16px;
+    }
+    .card .position{
+        font-size: 12px;
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1024px){
+    .investors-card{
+        height: 1100px;
+    }
+    .card .name{
+        font-size: 16px;
+    }
+    .card .position{
+        font-size: 12px;
+    }
+}
+
+@media all and (min-width:1025px) and (max-width:1200px){
+    .investors-card{
+        height: 1600px;
+    }
+    .card .name{
+        font-size: 18px;
+    }
+    .card .position{
+        font-size: 16px;
+    }
+} 
+@media screen and (min-width: 1201px){
+    .investors-card{
+        /* grid-template-columns: repeat(5,1fr); */
+        height: 1300px;
+    }
 }
